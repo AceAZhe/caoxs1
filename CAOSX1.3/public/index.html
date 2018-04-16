@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=750, user-scalable=no, target-densitydpi=device-dpi">
+    <meta charset="UTF-8">
+    <title>长安欧尚1.3版本</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery-3.2.1.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!--1.音乐图标-->
+        <a href="javascript:;" class="background-music musicRotate">
+            <img src="images/music.png">
+            <audio src="music/BGM.mp3"  class="audio-music" autoplay="autoplay"></audio>
+        </a>
+        <!--2.loading加载页面-->
+        <div class="loading">
+            <img src="images/car1.png" class="loading-car">
+            <span class="loading-tar-wrap"><i class="loading-tar-inner"></i></span>
+            <p class="loading-count">10%</p>
+        </div>
+        <!--3.loading加载完之后主页面main显示-->
+        <div class="main hide">
+            <a href="javascript:;" class="main-game-btn"><img src="images/enter.jpg" ></a>
+            <a href="javascript:;" class="main-score-btn"><img src="images/out.jpg" ></a>
+            <a href="javascript:;" class="main-rule-btn"><img src="images/rule.jpg" ></a>
+        </div>
+        <!--4.单击规则按钮呈现规则页面-->
+        <div class="game-rule hide"></div>
+        <!--5.点击排行榜按钮排行榜页面显示-->
+        <div class="ranking-list hide">
+            <div class="ranking-list-background">
+                <img src="images/i3.png" class="ranking-list-close" >
+                <div class="ranking-list-div">
+                    <div class="ranking-list-wrap">
+                        <ul class="ranking-list-rankings"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--6.点击开始游戏按钮进入游戏界面-->
+        <img src="images/gameB.png" class="hide start-game-background">
+        <!--7.游戏开始前2秒钟倒计时-->
+        <div class="game-before hide">
+            <div class="game-before-background"></div>
+            <div class="game-before-info"></div>
+            <div class="game-before-count">5</div>
+        </div>
+        <!--8.游戏开始了传送带运动-->
+        <div class="gaming hide">
+            <div class="gaming-background"></div>
+            <div class="gaming-info">
+                <span >还有<strong class="gaming-info-font">10</strong>件物品</span>
+                <span class="fl">当前耗时<strong  class="gaming-info-font timer">0</strong>秒</span>
+            </div>
+            <div class="gaming-prompt">点击传送带上居中物品，进行还原放置</div>
+            <div class="gaming-lists-background">
+                <ul class="gaming-lists-ul translateM"></ul>
+            </div>
+        </div>
+        <!--9.游戏结束了最好得分-->
+        <div class="game-score hide">
+            <div class="game-score-background">
+                <img src="images/xx.png" class="game-score-background-x">
+                <p class="game-score-time">
+                    <img src="images/thisScore.png">
+                    <span class="game-score-counts">180.03秒</span>
+                </p>
+                <p class="game-score-scores">
+                    <img src="images/thisScores.png">
+                    <span class="game-score-counts"></span>
+                </p>
+                <div class="game-history-score">
+                    历史最高分
+                    <span class="game-history-top-score">1680</span>
+                </div>
+                <div class="game-opportunity">
+                    还剩下<span class="game-opportunity-count">2</span>次游戏机会
+                    继续加油哦！
+                </div>
+            </div>
+            <a href="javascript:;" class="game-score-again"><img src="images/again.png"></a>
+            <a href="javascript:;" class="game-score-yao"><img src="images/yao.png"></a>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/index.js"></script>
+</body>
+</html>
